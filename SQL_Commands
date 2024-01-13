@@ -1,0 +1,79 @@
+mysql -u username -p password
+.\mysql -u root
+
+CREATE DATABASE database_name;
+DROP DATABASE database_name;
+
+SHOW DATABASES;
+
+USE database_name;
+
+CREATE TABLE table_name (
+    column1 int NOT NULL,
+    column2 varchar(255) DEFAULT default_value,
+    column3 text(255),
+    PRIMARY KEY (column1)
+    FOREIGN KEY (column_name) REFERENCES database_name(column_name)
+);
+
+DROP TABLE table_name;
+
+ALTER TABLE table_name
+ADD column4 varchar(255);
+DROP column5;
+MODIFY COLUMN column_name datatype;
+
+INSERT INTO table_name (column2, column3)
+VALUES (value2, value3),
+(value2, value3);
+
+UPDATE table_name
+SET column2 = value2, column3 = value3
+WHERE column1 = 1;
+
+SELECT column_names/
+FROM table_name;
+WHERE condition;
+LIMIT limit;
+
+DELETE FROM table_name WHERE column1 = 1;
+
+SELECT MAX/MIN(column) AS alias_name FROM table_name;
+    COUNT(column) FROM table_name; //returns the number of rows that are not null
+    AVG(column) //returns the average of numerical values
+    SUM(column) //returns the sum of the numeric values
+
+LIKE operators
+
+WHERE column_name LIKE 'a%'     Finds any values that starts with "a"
+WHERE column_name LIKE '%a'     Finds any values that end with "a"
+WHERE column_name LIKE '%or%'   Finds any values that have "or" in any position
+WHERE column_name LIKE '_r%'    Finds any values that have "r" in the second position
+WHERE column_name LIKE 'a_%'    Finds any values that start with "a" and are atleast 2 characters in length
+WHERE column_name LIKE 'a__%'   Finds any values that start with "a" and are atleast 3 characters in length
+WHERE column_name LIKE 'a%o'    Finds any values that start with "a" and ends with "o"
+
+// % - represents zero or more characters
+// _ - represents one characters
+
+WHERE condition IN (value1, value2);
+                NOT IN value;
+                BETWEEN value;
+                NOT BETWEEN value;
+
+INSERT INTO target_table(target_column1, target_column2)
+SELECT source_column1, source column2 FROM source_table;
+
+CREATE TABLE StudentInfo (
+    studId int NOT NULL,
+    lastName varchar(255),
+    firstName varchar(255),
+    middleName varchar(255),
+    address varchar(255),
+    email varchar(255),
+    contactNo varchar(255),
+    PRIMARY KEY (studId)
+);
+
+INSERT INTO StudentInfo (lastName, firstName, middleName, address, email, contactNo)
+VALUES ("Last", "First", "Middle", "Address", "Email@gmail.com", "09876543211" );
