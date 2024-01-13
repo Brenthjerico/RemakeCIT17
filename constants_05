@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <?php
+        //Constants
+        define("ONE", 1);
+        define("VAPOREON", "hey guys whats up");
+        print "Constant ONE: ";
+        print constant("ONE");
+        print "<br>";
+        print constant("VAPOREON");
+        print "<br>";
+
+        //Constants with array
+        define("SENTENCE", ["this" , "is", "a", "sentence"]);
+        function sentence(){
+            for($x = 0; $x < 4; $x++){
+                print SENTENCE[$x];
+                print " ";
+                if($x == 3)
+            }
+        }
+</body>
+</html>
