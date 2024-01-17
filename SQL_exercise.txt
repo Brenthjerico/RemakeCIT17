@@ -1,0 +1,57 @@
+cd..
+cd..
+cd mysql/bin
+.\mysql -u root
+
+CREATE DATABASE StudentRecord;
+
+CREATE TABLE student (
+    StudentID int NOT NULL,
+    FirstName varchar(255) NOT NULL,
+    LastName varchar(255) NOT NULL,
+    DateOfBirth varchar(255) NOT NULL,
+    Email varchar(255) NOT NULL,
+    PhoneNo int NOT NULL,
+    PRIMARY KEY (Student ID)
+);
+
+
+
+CREATE TABLE Course (
+    CourseID int NOT NULL AUTO_INCREMENT,
+    CourseName varchar(255),
+    Credits int,
+    PRIMARY KEY (CourseID)
+);
+
+CREATE TABLE Instructor (
+    InstructorID int NOT NULL AUTO_INCREMENT,
+    FirstName varchar(255),
+    LastName varchar(255),
+    Email varchar(255),
+    Phone varchar(255),
+    PRIMARY KEY (InstructorID)
+);
+
+CREATE TABLE Enrollment (
+    EnrollmentID int NOT NULL AUTO_INCREMENT,
+    StudentID int,
+    CourseID int,
+    EnrollmentDate date,
+    Grade int,
+    PRIMARY KEY (EnrollmentID),
+    FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
+    FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
+);
+
+INSERT INTO student (FirstName, LastName, DateOfBirth, Email, Phone)
+VALUES ("Brenth", "Baldiviso", "April 22,2002", "Bjaybaldiviso@gmail.com", "09123456789"), ("Brenth", "Baldiviso", "April 22,2002", "Bjaybaldiviso@gmail.com", "09123456789");
+SELECT*FROM student;
+
+INSERT INTO Course (CourseID, CourseName, Credits)
+VALUES (2002, "CIT17", 2002);
+SELECT*FROM Course;
+
+INSERT INTO Instructor (InstructorID, FirstName, LastName, Email, PhoneNo)
+VALUES(21-4222-991, "Leonard Prim" "CIT17", january 4,2024, 90);
+SELECT*FROM Enrollment;
