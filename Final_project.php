@@ -61,7 +61,7 @@
         <button onclick="toggleFormUsersDelete()">Delete</button>
 
         <div class="mt-3">
-            <form id="UsersFormCreate" method="post" action="table_edit.php" style="display: none;">
+            <form id="UsersFormCreate" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Add User</h4>
                 <input type="text" name="username" placeholder="Username">
                 <input type="text" name="email" placeholder="Email">
@@ -69,7 +69,7 @@
                 <input type="submit" name="users_add" value="Add User">
             </form>
 
-            <form id="UsersFormUpdate" method="post" action="table_edit.php" style="display: none;">
+            <form id="UsersFormUpdate" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Update User</h4>
                 <input type="text" name="id" placeholder="User ID" required>
                 <input type="text" name="username" placeholder="Username">
@@ -78,7 +78,7 @@
                 <input type="submit" name="users_update" value="Update User">
             </form>
 
-            <form id="UsersFormDelete" method="post" action="table_edit.php" style="display: none;">
+            <form id="UsersFormDelete" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Delete User</h4>
                 <input type="text" name="id" placeholder="User ID" required>
                 <input type="submit" name="users_delete" value="Delete user">
@@ -123,7 +123,7 @@
         <button onclick="toggleFormStudentDelete()">Delete</button>
 
         <div class="mt-3">
-            <form id="StudentFormCreate" method="post" action="table_edit.php" style="display: none;">
+            <form id="StudentFormCreate" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Add Student</h4>
                 <input type="text" name="first_name" placeholder="First Name">
                 <input type="text" name="last_name" placeholder="Last Name">
@@ -133,7 +133,7 @@
                 <input type="submit" name="student_add" value="Add Student">
             </form>
 
-            <form id="StudentFormUpdate" method="post" action="table_edit.php" style="display: none;">
+            <form id="StudentFormUpdate" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Update Student</h4>
                 <input type="text" name="id" placeholder="Student ID" required>
                 <input type="text" name="first_name" placeholder="First Name" >
@@ -144,7 +144,7 @@
                 <input type="submit" name="student_update" value="Update Student">
             </form>
 
-            <form id="StudentFormDelete" method="post" action="table_edit.php" style="display: none;">
+            <form id="StudentFormDelete" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Delete Student</h4>
                 <input type="text" name="id" placeholder="Student ID" required>
                 <input type="submit" name="student_delete" value="Delete Student">
@@ -185,14 +185,14 @@
         <button onclick="toggleFormCourseDelete()">Delete</button>
     
         <div class="mt-3">
-            <form id="CourseFormCreate" method="post" action="table_edit.php" style="display: none;">
+            <form id="CourseFormCreate" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Add Course</h4>
                 <input type="text" name="course_name" placeholder="Course Name" >
                 <input type="text" name="credits" placeholder="Credits" >
                 <input type="submit" name="course_add" value="Add Course">
             </form>
 
-            <form id="CourseFormUpdate" method="post" action="table_edit.php" style="display: none;">
+            <form id="CourseFormUpdate" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Update Course</h4>
                 <input type="text" name="id" placeholder="Course ID" required>
                 <input type="text" name="course_name" placeholder="Course Name" >
@@ -200,7 +200,7 @@
                 <input type="submit" name="course_update" value="Update Course">
             </form>
 
-            <form id="CourseFormDelete" method="post" action="table_edit.php" style="display: none;">
+            <form id="CourseFormDelete" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Delete Course</h4>
                 <input type="text" name="id" placeholder="Course ID" required>
                 <input type="submit" name="course_delete" value="Delete Course">
@@ -246,7 +246,7 @@
         <button onclick="toggleFormInstructorDelete()">Delete</button>
 
         <div class="mt-3">
-            <form id="InstructorFormCreate" method="post" action="table_edit.php" style="display: none;">
+            <form id="InstructorFormCreate" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Add Instructor</h4>
                 <input type="text" name="first_name" placeholder="First Name" >
                 <input type="text" name="last_name" placeholder="Last Name" >
@@ -255,7 +255,7 @@
                 <input type="submit" name="instructor_add" value="Add Instructor">
             </form>
 
-            <form id="InstructorFormUpdate" method="post" action="table_edit.php" style="display: none;">
+            <form id="InstructorFormUpdate" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Update Instructor</h4>
                 <input type="text" name="id" placeholder="Instructor ID" required>
                 <input type="text" name="first_name" placeholder="First Name" >
@@ -265,7 +265,7 @@
                 <input type="submit" name="instructor_update" value="Update Instructor">
             </form>
 
-            <form id="InstructorFormDelete" method="post" action="table_edit.php" style="display: none;">
+            <form id="InstructorFormDelete" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Delete Instructor</h4>
                 <input type="text" name="id" placeholder="Instructor ID" required>
                 <input type="submit" name="instructor_delete" value="Delete Instructor">
@@ -313,7 +313,7 @@
         <button onclick="toggleFormEnrollmentDelete()">Delete</button>
     
         <div class="mt-3">
-            <form id="EnrollmentFormCreate" method="post" action="table_edit.php" style="display: none;">
+            <form id="EnrollmentFormCreate" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Add Enrollment</h4>
                 <input type="text" name="student_id" placeholder="Student ID" >
                 <input type="text" name="course_id" placeholder="Course ID" >
@@ -322,7 +322,7 @@
                 <input type="submit" name="enrollment_add" value="Add Enrollment">
             </form>
 
-            <form id="EnrollmentFormUpdate" method="post" action="table_edit.php" style="display: none;">
+            <form id="EnrollmentFormUpdate" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Update Enrollment</h4>
                 <input type="text" name="id" placeholder="Enrollment ID" required>
                 <input type="text" name="student_id" placeholder="Student ID" >
@@ -332,7 +332,7 @@
                 <input type="submit" name="enrollment_update" value="Update Enrollment">
             </form>
 
-            <form id="EnrollmentFormDelete" method="post" action="table_edit.php" style="display: none;">
+            <form id="EnrollmentFormDelete" method="post" action="Table_edit.php" style="display: none;">
                 <h4>Delete Enrollment</h4>
                 <input type="text" name="id" placeholder="Enrollment ID" required>
                 <input type="submit" name="enrollment_delete" value="Delete Enrollment">
